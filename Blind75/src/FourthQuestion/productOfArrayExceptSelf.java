@@ -9,6 +9,8 @@ public class productOfArrayExceptSelf {
 		int size=nums.length;
 		before[0]=1;
 		after[size-1]=1;
+		//change
+	
 		if(size==0) {
 			return nums;
 		}
