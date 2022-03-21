@@ -3,6 +3,7 @@ package SixthQuestion;
 public class MaxProductSubarray {
 	  public static int maxProduct(int[] nums) {
 		  int largestProduct=1;
+		  //forGithub
 		  int maxProduct=-2000;
 		  for(int i=0;i<nums.length;i++) {
 			  largestProduct*=nums[i];
