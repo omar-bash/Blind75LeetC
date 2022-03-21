@@ -1,15 +1,17 @@
 package ThirdQuestion;
 
+import java.util.HashSet;
+
 public class ContainsDuplicates {
     public static boolean containsDuplicate(int[] nums) {
         boolean isDup=false;
+        HashSet <Integer> Weeder = new HashSet<Integer> ();
         for(int i=0;i<nums.length;i++) {
-        	for(int j=1;j<nums.length;j++) {
-        		if(nums[i]==nums[j]) {
-        			isDup=true;
-        			return isDup;
-        		}
+        	if(Weeder.contains(nums[i])) {
+        		isDup=true;
+        		return isDup;
         	}
+        	Weeder.add(nums[i]);
         }
     	return isDup;
     }
